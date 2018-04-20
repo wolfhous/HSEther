@@ -1,0 +1,6 @@
+framework module ethers {
+  umbrella header "ethers.h"
+
+  export *
+  module * { export * }
+}
