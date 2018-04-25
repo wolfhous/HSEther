@@ -1,4 +1,6 @@
 # HSEther ether wallet create 
+基于此静态库的项目ZAG已经顺利上线
+https://itunes.apple.com/cn/app/qq/id1354866033?mt=8
 ## 您的star是我最大的动力
 
 1.0 临时主要功能（2018-04-20）：
