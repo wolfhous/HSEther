@@ -52,9 +52,9 @@ ios version 10.0+
                               
 
 ------------------------------------------------
-##提供 非静态库源码，包括iOS和Android
-##提供 技术支持，包括iOS和Android
-##联系wechat： iHoushuai
+## 提供 非静态库源码，包括iOS和Android
+## 提供 技术支持，包括iOS和Android
+## 联系wechat： iHoushuai
 ------------------------------------------------
                               
                   
