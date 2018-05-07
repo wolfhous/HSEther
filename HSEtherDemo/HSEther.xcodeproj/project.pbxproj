@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8764976D20A05F4F003133B4 /* HSEther.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8764976C20A05F4F003133B4 /* HSEther.a */; };
 		87B1061D208998BF00D58693 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B1061C208998BF00D58693 /* AppDelegate.m */; };
 		87B10620208998BF00D58693 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B1061F208998BF00D58693 /* ViewController.m */; };
 		87B10623208998BF00D58693 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B10621208998BF00D58693 /* Main.storyboard */; };
@@ -14,10 +15,10 @@
 		87B10628208998BF00D58693 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B10626208998BF00D58693 /* LaunchScreen.storyboard */; };
 		87B1062B208998BF00D58693 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B1062A208998BF00D58693 /* main.m */; };
 		87B106442089BB1300D58693 /* ethers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B106422089BB1300D58693 /* ethers.framework */; };
-		87B106452089BB1300D58693 /* hsether.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B106432089BB1300D58693 /* hsether.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8764976C20A05F4F003133B4 /* HSEther.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = HSEther.a; sourceTree = "<group>"; };
 		87B10618208998BF00D58693 /* HSEther.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSEther.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B1061B208998BF00D58693 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		87B1061C208998BF00D58693 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -30,7 +31,6 @@
 		87B1062A208998BF00D58693 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		87B106412089BB1300D58693 /* HSEther.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSEther.h; sourceTree = "<group>"; };
 		87B106422089BB1300D58693 /* ethers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ethers.framework; sourceTree = "<group>"; };
-		87B106432089BB1300D58693 /* hsether.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = hsether.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +39,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87B106442089BB1300D58693 /* ethers.framework in Frameworks */,
-				87B106452089BB1300D58693 /* hsether.a in Frameworks */,
+				8764976D20A05F4F003133B4 /* HSEther.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,9 +82,9 @@
 		87B1063E2089BB1300D58693 /* libEther */ = {
 			isa = PBXGroup;
 			children = (
+				8764976C20A05F4F003133B4 /* HSEther.a */,
 				87B1063F2089BB1300D58693 /* include */,
 				87B106422089BB1300D58693 /* ethers.framework */,
-				87B106432089BB1300D58693 /* hsether.a */,
 			);
 			path = libEther;
 			sourceTree = "<group>";

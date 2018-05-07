@@ -4,13 +4,10 @@
 //
 //  Created by 侯帅 on 2018/4/20.
 //  Copyright © 2018年 com.houshuai. All rights reserved.
-//  欢迎点星星 https://github.com/wolfhous/HSEther
+//
 // 1 添加pch文件，全局引入 #import <UIKit/UIKit.h>
 // 2 在需要使用的地方 引入 #import "HSEther.h"
 // 3 build setting > vaild architectures 去掉对 armv7的支持
-//
-//  2018-04-20 版本1.0 上线 (功能：创建、导入）
-//  2018-04-30 版本1.2 计划 查询eth余额、查询基于eth的代币余额，您的点心是我最大的动力
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSInteger, HSWalletError) {
@@ -34,7 +31,7 @@ typedef NS_ENUM(NSInteger, HSWalletError) {
 
 /**
  创建钱包
-
+ 
  @param pwd 密码
  @param block 创建成功回调
  */
@@ -44,7 +41,7 @@ typedef NS_ENUM(NSInteger, HSWalletError) {
 
 /**
  助记词导入
-
+ 
  @param mnemonics 助记词 12个英文单词 空格分割
  @param pwd 密码
  @param block 导入回调
@@ -55,7 +52,7 @@ typedef NS_ENUM(NSInteger, HSWalletError) {
 
 /**
  KeyStore 导入
-
+ 
  @param keyStore keyStore文本，类似json
  @param pwd 密码
  @param block 导入回调
@@ -66,7 +63,7 @@ typedef NS_ENUM(NSInteger, HSWalletError) {
 
 /**
  私钥导入
-
+ 
  @param privateKey 私钥
  @param pwd 密码
  @param block 导入回调
@@ -74,4 +71,17 @@ typedef NS_ENUM(NSInteger, HSWalletError) {
 +(void)hs_importWalletForPrivateKey:(NSString *)privateKey
                                 pwd:(NSString *)pwd
                               block:(void(^)(NSString *address,NSString *keyStore,NSString *mnemonicPhrase,NSString *privateKey,BOOL suc,HSWalletError error))block;
+
+
+/**
+ 查询余额
+ 
+ @param arrayToken 代币token数组
+ @param address eth地址
+ @param block 返回余额（注意 数组第一个为ETH余额 后面的才是token余额）
+ */
++(void)hs_getBalanceWithTokens:(NSArray<NSString *> *)arrayToken
+                   withAddress:(NSString *)address
+                         block:(void(^)(NSArray *arrayBanlance,BOOL suc))block;
 @end
+
