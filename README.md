@@ -23,15 +23,12 @@ ZAG官网： http://zagcoin.org/
 以上安全起见，不调用接口实现，全部本地离线验证。
 
 
-### 1.2 主要添加功能（预计2018-04-30）：
+### 1.2 主要添加功能（2018-05-07）：
 
 1 查询以太坊余额
 
 2 查询基于以太坊公链token代币余额
 
-3 查询交易记录
-
-4 查询交易详情
 
 ------------------------------------------------
 # 支持 cocoaPods
@@ -42,21 +39,28 @@ ios version 10.0+
 
 ------------------------------------------------
 # 具体用法 详见Demo
-创建钱包
+ [1]创建钱包
 
 +(void)hs_createWithPwd:(NSString *)pwd block:(void(^)()block;
                   
- 助记词导入
+ [2]助记词导入
  
 +(void)hs_inportMnemonics:(NSString *)mnemonics pwd:(NSString *)pwd block:(void(^)()block;
 
- KeyStore 导入
+ [3]KeyStore 导入
  
 +(void)hs_importKeyStore:(NSString *)keyStore pwd:(NSString *)pwd block:(void(^)()block;
 
-私钥导入
+ [4]私钥导入
 
 +(void)hs_importWalletForPrivateKey:(NSString *)privateKey pwd:(NSString *)pwd block:(void(^)()block;
+
+
+ [5]查询eth和代币余额
+
++(void)hs_getBalanceWithTokens:(NSArray<NSString *> *)arrayToken
+                   withAddress:(NSString *)address
+                         block:(void(^)(NSArray *arrayBanlance,BOOL suc))block;
                               
                               
 
