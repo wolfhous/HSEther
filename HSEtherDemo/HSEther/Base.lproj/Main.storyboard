@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="riZ-SD-skp">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -34,27 +34,85 @@
                                     <constraint firstAttribute="height" constant="250" id="pHz-Rz-byl"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="注意看控制台打印" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unC-Pf-R8i">
-                                <rect key="frame" x="94.5" y="474" width="186.5" height="27.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="版本1.2 新增转账功能" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unC-Pf-R8i">
+                                <rect key="frame" x="77.5" y="474" width="221" height="27.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" red="0.64396554230000003" green="0.80075728889999997" blue="0.34103190900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkE-fU-F9c">
+                                <rect key="frame" x="0.0" y="531.5" width="125" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="bmb-uh-G5J"/>
+                                </constraints>
+                                <state key="normal" title="创建点我"/>
+                                <connections>
+                                    <action selector="create:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K8L-A9-Yc9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NhG-4h-J3i">
+                                <rect key="frame" x="125" y="531.5" width="125" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Kvr-Iv-OqI"/>
+                                </constraints>
+                                <state key="normal" title="查询点我"/>
+                                <connections>
+                                    <action selector="balance:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6ab-V4-Lkx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exd-YO-2En">
+                                <rect key="frame" x="250" y="531.5" width="125" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="AEO-lC-hNy"/>
+                                </constraints>
+                                <state key="normal" title="交易点我"/>
+                                <connections>
+                                    <action selector="transaction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fRz-Uj-UDf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="NhG-4h-J3i" firstAttribute="leading" secondItem="vkE-fU-F9c" secondAttribute="trailing" id="4us-re-4zs"/>
+                            <constraint firstItem="exd-YO-2En" firstAttribute="top" secondItem="unC-Pf-R8i" secondAttribute="bottom" constant="30" id="8GS-xq-W1U"/>
+                            <constraint firstItem="exd-YO-2En" firstAttribute="height" secondItem="vkE-fU-F9c" secondAttribute="height" id="DMf-GA-K62"/>
+                            <constraint firstItem="NhG-4h-J3i" firstAttribute="top" secondItem="unC-Pf-R8i" secondAttribute="bottom" constant="30" id="FMx-K2-3Ex"/>
                             <constraint firstItem="bIA-ky-UMj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hoe-PI-IJd"/>
+                            <constraint firstItem="exd-YO-2En" firstAttribute="width" secondItem="vkE-fU-F9c" secondAttribute="width" id="K5U-xe-MHj"/>
                             <constraint firstItem="Ao2-B4-jEB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="PF4-ZT-UO2"/>
+                            <constraint firstItem="vkE-fU-F9c" firstAttribute="top" secondItem="unC-Pf-R8i" secondAttribute="bottom" constant="30" id="UbF-jp-293"/>
                             <constraint firstItem="Ao2-B4-jEB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XJg-gF-KCo"/>
                             <constraint firstItem="unC-Pf-R8i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XLv-1S-je3"/>
+                            <constraint firstItem="NhG-4h-J3i" firstAttribute="width" secondItem="vkE-fU-F9c" secondAttribute="width" id="bPt-ge-xBo"/>
+                            <constraint firstItem="vkE-fU-F9c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fUU-DX-H3g"/>
+                            <constraint firstItem="NhG-4h-J3i" firstAttribute="height" secondItem="vkE-fU-F9c" secondAttribute="height" id="hWR-s7-nnD"/>
                             <constraint firstItem="unC-Pf-R8i" firstAttribute="top" secondItem="Ao2-B4-jEB" secondAttribute="bottom" constant="10" id="nCf-ym-a4r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="exd-YO-2En" secondAttribute="trailing" id="t0N-OW-hf6"/>
                             <constraint firstItem="Ao2-B4-jEB" firstAttribute="top" secondItem="bIA-ky-UMj" secondAttribute="bottom" constant="20" id="tSj-fm-jPy"/>
+                            <constraint firstItem="exd-YO-2En" firstAttribute="leading" secondItem="NhG-4h-J3i" secondAttribute="trailing" id="uOd-J9-UXH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="QtJ-dU-LRm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0r6-NH-OvR">
+            <objects>
+                <navigationController id="riZ-SD-skp" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HeD-q0-w3N">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZBa-PA-vXG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d2l-fM-cwv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-583" y="520"/>
         </scene>
     </scenes>
     <resources>

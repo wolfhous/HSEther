@@ -25,13 +25,25 @@ typedef NS_ENUM(NSInteger, HSWalletError) {
     HSWalletImportMnemonicsSuc = 9,         //助记词导入成功
     HSWalletImportKeyStoreSuc = 10,         //KeyStore导入成功
     HSWalletImportPrivateKeySuc = 11,       //私钥导入成功
+    
+    HSWalletErrorNotGasPrice = 12,//获取GasPrice失败
+    HSWalletErrorNotNonce = 18,//获取Nonce失败
+    HSWalletErrorMoneyMin = 13,//转账金额太小 取消使用
+    HSWalletErrorNSOrderedDescending = 14, //余额不足 取消使用
+    HSWalletErrorPWD = 15, //密码错误
+    HSWalletErrorSend = 16, //转账失败
+    
+    HSWalletSucSend = 17, //转账成功
+
 };
 
 @interface HSEther : NSObject
 
+// https://github.com/wolfhous/HSEther
+
 /**
  创建钱包
- 
+
  @param pwd 密码
  @param block 创建成功回调
  */
@@ -41,7 +53,7 @@ typedef NS_ENUM(NSInteger, HSWalletError) {
 
 /**
  助记词导入
- 
+
  @param mnemonics 助记词 12个英文单词 空格分割
  @param pwd 密码
  @param block 导入回调
@@ -52,7 +64,7 @@ typedef NS_ENUM(NSInteger, HSWalletError) {
 
 /**
  KeyStore 导入
- 
+
  @param keyStore keyStore文本，类似json
  @param pwd 密码
  @param block 导入回调
@@ -63,7 +75,7 @@ typedef NS_ENUM(NSInteger, HSWalletError) {
 
 /**
  私钥导入
- 
+
  @param privateKey 私钥
  @param pwd 密码
  @param block 导入回调
@@ -75,13 +87,50 @@ typedef NS_ENUM(NSInteger, HSWalletError) {
 
 /**
  查询余额
- 
- @param arrayToken 代币token数组
+
+ @param arrayToken 查询的代币所有token
  @param address eth地址
- @param block 返回余额（注意 数组第一个为ETH余额 后面的才是token余额）
+ @param block 回调
  */
 +(void)hs_getBalanceWithTokens:(NSArray<NSString *> *)arrayToken
                    withAddress:(NSString *)address
                          block:(void(^)(NSArray *arrayBanlance,BOOL suc))block;
-@end
 
+/**
+ 转账
+
+ @param toAddress 转入地址
+ @param money 转入金额
+ @param tokenETH 代币token 传nil默认为eth
+ @param decimal 小数位数
+ @param keyStore keyStore
+ @param pwd 密码
+ @param gasPrice gasPrice （建议10-20）建议传nil，默认位当前节点安全gasPrice
+ @param gasLimit gasLimit 不传 默认eth 21000 token 60000
+ @param block 回调
+ */
++(void)hs_sendToAssress:(NSString *)toAddress money:(NSString *)money tokenETH:(NSString *)tokenETH decimal:(NSString *)decimal currentKeyStore:(NSString *)keyStore pwd:(NSString *)pwd gasPrice:(NSString *)gasPrice gasLimit:(NSString *)gasLimit block:(void(^)(NSString *hashStr,BOOL suc,HSWalletError error))block;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@end

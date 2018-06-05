@@ -15,6 +15,12 @@
 		87B10628208998BF00D58693 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B10626208998BF00D58693 /* LaunchScreen.storyboard */; };
 		87B1062B208998BF00D58693 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B1062A208998BF00D58693 /* main.m */; };
 		87B106442089BB1300D58693 /* ethers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B106422089BB1300D58693 /* ethers.framework */; };
+		87C7867320C531D60028AA35 /* CreateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C7867120C531D60028AA35 /* CreateVC.m */; };
+		87C7867420C531D60028AA35 /* CreateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87C7867220C531D60028AA35 /* CreateVC.xib */; };
+		87C7868220C532C30028AA35 /* BalanceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C7868020C532C30028AA35 /* BalanceVC.m */; };
+		87C7868320C532C30028AA35 /* BalanceVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87C7868120C532C30028AA35 /* BalanceVC.xib */; };
+		87C7868720C532DD0028AA35 /* TransactionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C7868520C532DD0028AA35 /* TransactionVC.m */; };
+		87C7868820C532DD0028AA35 /* TransactionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87C7868620C532DD0028AA35 /* TransactionVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +37,15 @@
 		87B1062A208998BF00D58693 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		87B106412089BB1300D58693 /* HSEther.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSEther.h; sourceTree = "<group>"; };
 		87B106422089BB1300D58693 /* ethers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ethers.framework; sourceTree = "<group>"; };
+		87C7867020C531D60028AA35 /* CreateVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateVC.h; sourceTree = "<group>"; };
+		87C7867120C531D60028AA35 /* CreateVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateVC.m; sourceTree = "<group>"; };
+		87C7867220C531D60028AA35 /* CreateVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateVC.xib; sourceTree = "<group>"; };
+		87C7867F20C532C30028AA35 /* BalanceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BalanceVC.h; sourceTree = "<group>"; };
+		87C7868020C532C30028AA35 /* BalanceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BalanceVC.m; sourceTree = "<group>"; };
+		87C7868120C532C30028AA35 /* BalanceVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BalanceVC.xib; sourceTree = "<group>"; };
+		87C7868420C532DD0028AA35 /* TransactionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionVC.h; sourceTree = "<group>"; };
+		87C7868520C532DD0028AA35 /* TransactionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransactionVC.m; sourceTree = "<group>"; };
+		87C7868620C532DD0028AA35 /* TransactionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +85,15 @@
 				87B1061C208998BF00D58693 /* AppDelegate.m */,
 				87B1061E208998BF00D58693 /* ViewController.h */,
 				87B1061F208998BF00D58693 /* ViewController.m */,
+				87C7867F20C532C30028AA35 /* BalanceVC.h */,
+				87C7868020C532C30028AA35 /* BalanceVC.m */,
+				87C7868120C532C30028AA35 /* BalanceVC.xib */,
+				87C7867020C531D60028AA35 /* CreateVC.h */,
+				87C7867120C531D60028AA35 /* CreateVC.m */,
+				87C7867220C531D60028AA35 /* CreateVC.xib */,
+				87C7868420C532DD0028AA35 /* TransactionVC.h */,
+				87C7868520C532DD0028AA35 /* TransactionVC.m */,
+				87C7868620C532DD0028AA35 /* TransactionVC.xib */,
 				87B10621208998BF00D58693 /* Main.storyboard */,
 				87B10624208998BF00D58693 /* Assets.xcassets */,
 				87B10626208998BF00D58693 /* LaunchScreen.storyboard */,
@@ -164,8 +188,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				87B10628208998BF00D58693 /* LaunchScreen.storyboard in Resources */,
+				87C7868320C532C30028AA35 /* BalanceVC.xib in Resources */,
 				87B10625208998BF00D58693 /* Assets.xcassets in Resources */,
+				87C7867420C531D60028AA35 /* CreateVC.xib in Resources */,
 				87B10623208998BF00D58693 /* Main.storyboard in Resources */,
+				87C7868820C532DD0028AA35 /* TransactionVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,7 +204,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				87B10620208998BF00D58693 /* ViewController.m in Sources */,
+				87C7868220C532C30028AA35 /* BalanceVC.m in Sources */,
 				87B1062B208998BF00D58693 /* main.m in Sources */,
+				87C7868720C532DD0028AA35 /* TransactionVC.m in Sources */,
+				87C7867320C531D60028AA35 /* CreateVC.m in Sources */,
 				87B1061D208998BF00D58693 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
