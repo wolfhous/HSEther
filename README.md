@@ -7,7 +7,7 @@ ZAG官网： http://zagcoin.org/
 
 融资报道： https://www.baidu.com/s?wd=zag%E9%92%B1%E5%8C%85&rsv_spt=1&rsv_iqid=0xd2b7448d00029c68&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&rsv_sug3=11&rsv_sug1=14&rsv_sug7=100&rsv_t=5121XDphVh%2FemYDjnPZ74X93QgwvtkwJ%2FDQgBbS8BdiVSykHQq7Xobc6yr1TiyP1Kgir&rsv_sug2=0&inputT=4721&rsv_sug4=4721
 
-![demo.gif](https://upload-images.jianshu.io/upload_images/2923333-a61f62dff8d416b7.gif?imageMogr2/auto-orient/strip)
+![demo.gif](https://github.com/wolfhous/HSEther/blob/master/seedemo.gif)
 
 ## 您的star是我最大的动力
 
@@ -80,7 +80,15 @@ ios version 10.0+
                          
  [6]转账
  
-+(void)hs_sendToAssress:(NSString *)toAddress money:(NSString *)money tokenETH:(NSString *)tokenETH decimal:(NSString *)decimal currentKeyStore:(NSString *)keyStore pwd:(NSString *)pwd gasPrice:(NSString *)gasPrice gasLimit:(NSString *)gasLimit block:(void(^)(NSString *hashStr,BOOL suc,HSWalletError error))block;
++(void)hs_sendToAssress:(NSString *)toAddress 
+                  money:(NSString *)money 
+               tokenETH:(NSString *)tokenETH 
+                decimal:(NSString *)decimal 
+        currentKeyStore:(NSString *)keyStore 
+                    pwd:(NSString *)pwd 
+               gasPrice:(NSString *)gasPrice 
+               gasLimit:(NSString *)gasLimit 
+                  block:(void(^)(NSString *hashStr,BOOL suc,HSWalletError error))block;
   ```                            
                               
 
