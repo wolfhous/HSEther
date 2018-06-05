@@ -7,6 +7,7 @@ ZAG官网： http://zagcoin.org/
 
 融资报道： https://www.baidu.com/s?wd=zag%E9%92%B1%E5%8C%85&rsv_spt=1&rsv_iqid=0xd2b7448d00029c68&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&rsv_sug3=11&rsv_sug1=14&rsv_sug7=100&rsv_t=5121XDphVh%2FemYDjnPZ74X93QgwvtkwJ%2FDQgBbS8BdiVSykHQq7Xobc6yr1TiyP1Kgir&rsv_sug2=0&inputT=4721&rsv_sug4=4721
 
+![demo.gif](https://upload-images.jianshu.io/upload_images/2923333-a61f62dff8d416b7.gif?imageMogr2/auto-orient/strip)
 
 ## 您的star是我最大的动力
 
@@ -27,24 +28,33 @@ ZAG官网： http://zagcoin.org/
 
 1 查询以太坊余额
 
-2 查询基于以太坊公链token代币余额
+2 查询基于以太坊公链token代币余额（ERC20代币余额）
 
-### 1.2 主要添加功能（预计完成2018-05-20）：
+### 1.2 主要添加功能（2018-06-05）：
 
 1 以太坊转账
 
-2 基于以太坊token的代币转账（比如EOS转账等）
+2 基于以太坊token的代币（ERC20代币）转账（比如EOS转账等）
+
+### 1.3 主要添加功能（预计完成2018-06-30）：
+
+1 ERC20代币 总量查询
+
+2 ERC20代币 官方图标查询
+
+3 ERC20代币 小数位数查询...等等...
 
 
 ------------------------------------------------
 # 支持 cocoaPods
-
+```
 cocoaPods HSEther
-
+```
 ios version 10.0+
 
 ------------------------------------------------
 # 具体用法 详见Demo
+```
  [1]创建钱包
 
 +(void)hs_createWithPwd:(NSString *)pwd block:(void(^)()block;
@@ -67,7 +77,11 @@ ios version 10.0+
 +(void)hs_getBalanceWithTokens:(NSArray<NSString *> *)arrayToken
                    withAddress:(NSString *)address
                          block:(void(^)(NSArray *arrayBanlance,BOOL suc))block;
-                              
+                         
+ [6]转账
+ 
++(void)hs_sendToAssress:(NSString *)toAddress money:(NSString *)money tokenETH:(NSString *)tokenETH decimal:(NSString *)decimal currentKeyStore:(NSString *)keyStore pwd:(NSString *)pwd gasPrice:(NSString *)gasPrice gasLimit:(NSString *)gasLimit block:(void(^)(NSString *hashStr,BOOL suc,HSWalletError error))block;
+  ```                            
                               
 
 ------------------------------------------------
