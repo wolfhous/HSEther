@@ -2,6 +2,8 @@
 
 <img src="https://github.com/wolfhous/HSEther/blob/master/seedemo.gif" width="300" hegiht="420" align=center />
 
+
+
 ## 您的star是我最大的动力
 
 ### 1.0 临时主要功能（2018-04-20）：
@@ -40,6 +42,8 @@
 ###1.4 主要添加功能（预计完成2018-07）：
 
 1 自定义发行ERC20代币
+
+
 
 ------------------------------------------------
 # 支持 cocoaPods
@@ -93,5 +97,5 @@ cocoaPods HSEther
 ## 提供 技术支持，包括iOS和Android
 ## 联系wechat： iHoushuai
 ------------------------------------------------
-                              
-                  
+简书地址：https://www.jianshu.com/p/6839a8c3f220
+------------------------------------------------
