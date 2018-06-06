@@ -9,6 +9,8 @@ ZAG官网： http://zagcoin.org/
 
 ![demo.gif](https://github.com/wolfhous/HSEther/blob/master/seedemo.gif =300x)
 
+<img src="https://github.com/wolfhous/HSEther/blob/master/seedemo.gif" width="200" hegiht="313" align=center />
+
 ## 您的star是我最大的动力
 
 ### 1.0 临时主要功能（2018-04-20）：
