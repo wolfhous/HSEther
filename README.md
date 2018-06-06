@@ -7,7 +7,7 @@ ZAG官网： http://zagcoin.org/
 
 融资报道： https://www.baidu.com/s?wd=zag%E9%92%B1%E5%8C%85&rsv_spt=1&rsv_iqid=0xd2b7448d00029c68&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&rsv_sug3=11&rsv_sug1=14&rsv_sug7=100&rsv_t=5121XDphVh%2FemYDjnPZ74X93QgwvtkwJ%2FDQgBbS8BdiVSykHQq7Xobc6yr1TiyP1Kgir&rsv_sug2=0&inputT=4721&rsv_sug4=4721
 
-![demo.gif](https://github.com/wolfhous/HSEther/blob/master/seedemo.gif)
+![demo.gif](https://github.com/wolfhous/HSEther/blob/master/seedemo.gif =300x)
 
 ## 您的star是我最大的动力
 
@@ -44,13 +44,17 @@ ZAG官网： http://zagcoin.org/
 
 3 ERC20代币 小数位数查询...等等...
 
+###1.4 主要添加功能（预计完成2018-07）：
+
+1 自定义发行ERC20代币
 
 ------------------------------------------------
 # 支持 cocoaPods
 ```
+# ios version 10.0+
 cocoaPods HSEther
 ```
-ios version 10.0+
+
 
 ------------------------------------------------
 # 具体用法 详见Demo
