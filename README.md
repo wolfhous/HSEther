@@ -8,6 +8,7 @@
 
 
 
+## [中文文档请点我](https://github.com/wolfhous/HSEther/blob/master/README_cn.md)
 
 ## Your star is my greatest motivation
 
