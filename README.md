@@ -7,7 +7,7 @@
 <img src="https://upload-images.jianshu.io/upload_images/2923333-3d96e2eb2a0d2df6.png" width="900" hegiht="420" align=center />
 
 
-## 感谢 www.tokenfunc.org 大力支持
+## 感谢 www.tokenfunc.org 大力支持【收费群18年9月已经突破40人次，感谢大家支持】
 ## [中文文档请点我](https://github.com/wolfhous/HSEther/blob/master/README_cn.md)
 
 ## Your star is my greatest motivation
@@ -106,5 +106,5 @@ cocoaPods HSEther
 ## Provide technical support including iOS and Android
 ## Contact me(wechat): iHoushuai
 ------------------------------------------------
-Jianshu addresses：https://www.jianshu.com/p/6839a8c3f220
+Jianshu addresses：https://www.jianshu.com/p/08bc9d121e69
 ------------------------------------------------
